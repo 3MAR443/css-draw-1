@@ -1,0 +1,239 @@
+:root {
+    --clr-1--: rgb(246, 180, 154);
+    --clr-2--: rgb(36, 2, 61);
+    --clr-3--: rgb(192, 35, 26);
+    --clr-4--: rgb(250, 246, 238);
+    --clr-5--: rgb(212, 155, 98);
+    --clr-w--: rgb(255, 255, 255);
+    --clr-neck--: rgb(221, 127, 38);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+
+
+
+
+}
+
+.content {
+
+    height: 600px;
+
+}
+
+.container .triangle {
+    position: relative;
+    width: 350px;
+    height: 370px;
+    background-image: linear-gradient(to bottom right, transparent 50%, var(--clr-1--) 0), linear-gradient(to top right, var(--clr-1--) 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    transform: rotate(82deg) translate(30%);
+}
+
+
+
+.container .eyes {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 40% 60% 40% 60%;
+    background-color: rgb(255, 254, 253);
+    transform: translate(90%, -320%) rotate(-39deg);
+}
+
+.container .eyes2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 40% 60% 40% 60%;
+    background-color: rgb(255, 254, 253);
+    transform: translate(138%, -215%) rotate(-38deg);
+    z-index: -1;
+}
+
+
+.container .pupil {
+    position: relative;
+    width: 25px;
+    height: 40px;
+    border: 1px solid var(--clr-2--);
+    background-color: var(--clr-2--);
+    border-radius: 40% 60% 40% 60%;
+    transform: translate(280%, 140%) rotate(41deg);
+}
+
+.container .iris {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--clr-4--);
+    background-color: var(--clr-4--);
+    border-radius: 50%;
+    transform: translate(50%, 66%) rotate(64deg);
+    z-index: 10;
+
+}
+
+.container .line {
+    position: relative;
+    border-top: 1px solid black;
+    border-radius: 0% 71% 70% 0% / 0% 100% 100% 0%;
+    transform: translate(50%, -600%) rotate(-140deg);
+    height: 51px;
+    border-radius: 39%/50% 20% 54% 55%;
+    width: 45%;
+}
+
+.container .curve-line {
+    position: relative;
+    border-top: 1px solid black;
+    transform: translate(2px, -200px) rotate(-33deg);
+    width: 114%;
+    background-color: var(--clr-w--);
+    height: 20px;
+    border-radius: 52% 34% 9% 50%;
+    z-index: -2;
+}
+
+.curve-line-2 {
+    position: relative;
+    border-right: 1px black solid;
+    width: 95px;
+    height: 301px;
+    border-radius: 61% 100% 100% 63% / 87% 100% 100% 100%;
+    transform: translate(-45%, -160%) rotate(-9deg);
+    background-color: var(--clr-w--);
+}
+
+.curve-line-3 {
+    position: relative;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    width: 47px;
+    margin: auto;
+    height: 33px;
+    transform: translate(-293%, -1479%) rotate(10deg);
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    background-color: var(--clr-neck--);
+    z-index: -1;
+
+}
+
+.curve-line-4 {
+    position: relative;
+    border-bottom: 1px black solid;
+    margin: auto;
+    width: 37px;
+    height: 33px;
+    transform: translate(-356%, -1615%) rotate(10deg);
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    box-shadow: -3px 15px 0px -3px var(--clr-neck--);
+}
+
+.hair-line {
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    transform: translate(-334%, -1731%) rotate(307deg);
+    border-radius: 60% 70% 100% 100% / 60% 70% 100% 100%;
+    box-shadow: 0px -9px 0px 0px var(--clr-3--);
+}
+
+
+.hair-piece-1 {
+    position: relative;
+    margin: auto;
+    width: 61px;
+    height: 153px;
+    transform: translate(-252%, -627%) rotate(33deg);
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    box-shadow: -16px 8px 0px 5px var(--clr-3--);
+}
+
+.hair-piece-2 {
+    position: relative;
+    margin: auto;
+    width: 102px;
+    height: 153px;
+    transform: translate(-134%, -714%) rotate(55deg);
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    box-shadow: -20px 10px 0px 1px var(--clr-3--);
+}
+
+.hair-piece-3 {
+    position: relative;
+    margin: auto;
+    width: 35px;
+    height: 87px;
+    transform: translate(-571%, -1436%) rotate(60deg);
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    box-shadow: inset 13px 20px 0px 1px var(--clr-3--);
+}
+
+.hair-piece-4 {
+    position: relative;
+    margin: auto;
+    /* border: 1px solid black;
+*/
+    width: 37px;
+    height: 109px;
+    transform: translate(-493%, -1252%) rotate(32deg);
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    box-shadow: inset 8px -9px 1px 4px var(--clr-3--);
+}
+
+.ear {
+    position: relative;
+    margin: auto;
+    border-top: 2px solid black;
+    width: 56px;
+    height: 74px;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    transform: translate(-223%, -1801%) rotate(292deg);
+    background-color: var(--clr-1--);
+}
+
+.ear-shadow-1 {
+    position: relative;
+    margin: auto;
+    /* border: 1px solid black; */
+    width: 24px;
+    height: 22px;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 99%;
+    transform: translate(-537%, -6281%) rotate(-405deg);
+    box-shadow: -2px -2px 0px 0px;
+}
+
+/* .container .eyes::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 99px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 40% 60% 40% 60%;
+    transform: translate(30%, 24%);
+    background: var(--clr-4--);
+    z-index: -1;
+
+} */
